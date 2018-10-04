@@ -18,6 +18,10 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
+    public function contacts()
+    {
+        return $this->hasMany('App\Contact');
+    }
 
     /**
      * The attributes that should be hidden for arrays.
