@@ -13,6 +13,7 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
+    
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
@@ -20,10 +21,19 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <style>
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
     .jumbotron{
-        background-color: #1e202f !important; 
+        /* background-image:url({{url('images/wallpaper.jpg')}}) */
+    }
+    .jumbotron {
+        min-height: 200px !important;
+        background-color: rgba(56, 55, 89, 0.4);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        text-align: center;
     }
     .card, .card-header {
+        font-family: 'Montserrat', sans-serif;
         border: none !important;
         background-color: #1e202f;
         
@@ -35,16 +45,27 @@
     }
      thead th{
         border-top: none !important;
-        border-bottom: 0.5px solid white !important;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.7) !important;
     }
-    tbody, th {
-        opacity:0.8;
+     th, td, tr  {
+        border-color: rgba(255, 255, 255, 0.2) !important;
         color: white;
-        background-color: #383759 !important;
+        background-color: rgba(56, 55, 89, 0.5) !important;
     }
     .border {
-
         border-left: 6px solid #f92552 !important;
+        font-weight: bold;
+        color: white;
+        background-color: #383759;
+    }
+    .border-green {
+        border-left: 6px solid #3ffeca !important;
+        font-weight: bold;
+        color: white;
+        background-color: #383759;
+    }
+    .border-yellow {
+        border-left: 6px solid yellow !important;
         font-weight: bold;
         color: white;
         background-color: #383759;
@@ -54,11 +75,10 @@
     }
     td {
         vertical-align: none !important;
-        font-size: 12px;
+        font-size: 10px;
         
     }
     h1 {
-
         color: #E8C547;
         font-weight: bold;
         font-size: 3em;
@@ -104,24 +124,20 @@
        border: 3px solid #E8C547 ; 
       width: 100%;
     }
-
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0;
     }
-
     .form-group {
       text-align: center;
     }
-
     .form-group * {
       display: inline-block;
     }
     .table td, .table th {
         vertical-align: middle !important;
     }
-
     input[type="number"] {
       -moz-appearance: textfield;
       text-align: center;
@@ -142,7 +158,6 @@
     }
     .team p {
       margin: 0;
-
     }
     .prediction-group {
         display:inline-block;
