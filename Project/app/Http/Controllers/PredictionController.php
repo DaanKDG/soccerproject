@@ -35,10 +35,8 @@ class PredictionController extends Controller
         \DB::enableQueryLog();
         $user = Auth::user();
 
-        $user->load('predictions', 'predictions.match'); 
-        
-        dd($user);
-            
+        $user->load('predictions.match'); 
+          
         return view('predictions', compact('user'));
     }
 }

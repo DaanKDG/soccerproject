@@ -1,38 +1,15 @@
 @extends ('layouts.app')
 
 @section ('content')
-
+<div class="jumbotron">
+<h1 style="color: white; font-weight: bold; letter-spacing: 1px;" class=""> MAKE A  <span style="color: #3ffeca; "> PREDICTION</span> </h1> <small style="color: white;">Make free predictions, and have a chance of winning prizes!</small>
+</div>
   <div class="container mt-5">
 
-        <!-- <ul class="match-table">
-        {!! Form::open(['method'=>'POST', 'action'=>'PredictionController@store']) !!}
-                @foreach($matches as $match)
-                    <div class="specific-match-table container mb-5">
-                       <div class="row">
-                            <div class="team d-flex align-items-center col-sm-5">
-                                <p>{{$match->homeTeam}}</p>
-                            </div>
-                            <div class="row col-sm red">
-                                {{Form::hidden('match[' . $match->match_id . '][homeTeamName]', $match->homeTeam )}}
-                                {{Form::hidden('match[' . $match->match_id . '][status]', $match->status )}}
-                                {{Form::number('match[' . $match->match_id . '][homeTeam]' , '', ['placeholder' => '?', 'class' =>'form-control col-sm'])}}
-                                <span class="vs">vs</span>
-                                {{Form::hidden('match[' . $match->match_id . '][awayTeamName]', $match->awayTeam )}}
-                                {{Form::number('match[' . $match->match_id . '][awayTeam]' , '', ['placeholder' => '?', 'class' =>'form-control col-sm'])}}
-                            </div>
-                            <div class="team d-flex align-items-center justify-content-end col-sm-5">
-                                <p>{{$match->awayTeam}}</p>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-         {{Form::button('Submit', ['type' =>'submit', 'class' => 'submit-btn'])}}              
-         {!! Form::close() !!}
-        </ul> -->
 {!! Form::open(['method'=>'POST', 'action'=>'PredictionController@store']) !!}
         <div class="card">
   <div class="card-header border">
-  ENGLAND: PREMIER LEAGUE UPCOMING FIXTURES  <small class="float-right" style="font-weight:bold;"> Matchday 12</small>
+  PREMIER LEAGUE: UPCOMING FIXTURES  <small class="float-right" style="font-weight:bold;"> Matchday 12</small>
   </div>
 
         <table class="table table-hover">

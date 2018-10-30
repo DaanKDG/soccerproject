@@ -93,9 +93,12 @@
         background-color:#1e202f   !important;
     }
     nav {
-       background-color: #383759 !important;
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 10px !important;
+        background-color: #383759 !important;
     }
-    nav li, nav ul, nav a, p {
+    nav li, nav ul, nav a {
+        font-size: 13px !important;
         color: white !important;
         font-weight: bold;
     }
@@ -185,8 +188,17 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" style="color:#3ffeca !important; font-size: 23px !important;" href="{{ url('/') }}">
                    Winner
+                </a>
+                <a class="navbar-brand" href="{{ url('/live') }}">
+                   Live
+                </a>
+                <a class="navbar-brand" href="{{ url('/predictions') }}">
+                   Predictions
+                </a>
+                <a class="navbar-brand" href="{{ url('/live') }}">
+                   History
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
