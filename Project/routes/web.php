@@ -14,6 +14,7 @@
 Route::get('/', 'GuzzleController@getMatches');
 Route::post('/prediction', "PredictionController@store");
 Route::get('/predictions', 'PredictionController@showPredictions');
+Route::get('/live', 'MatchController@index');
 
 Auth::routes();
 
