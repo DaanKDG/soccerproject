@@ -24,6 +24,7 @@ class PredictionController extends Controller
                 'homeScore'=> $match['homeTeam'],
                 'awayScore'=> $match['awayTeam'],
                 'result'   => false
+
              ]);
         });
 
@@ -32,7 +33,7 @@ class PredictionController extends Controller
     }
 
     public function showPredictions() {
-        \DB::enableQueryLog();
+        
         $user = Auth::user();
 
         $user->load('predictions.match'); 

@@ -12,7 +12,7 @@ class MatchController extends Controller
         $scheduled = Match::all()->where('status', 'SCHEDULED');
         $active = Match::all()->where('status', 'IN_PLAY');
         $finished = Match::all()->where('status', 'FINISHED');
-           
+
         return view('live', compact('scheduled', 'active', 'finished'));
 
     }
